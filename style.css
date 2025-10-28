@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.cta {
+    background-color: #3882F6;
+}
+
+.footer {
+    background-color: #1F2937;
+}
