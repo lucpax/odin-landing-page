@@ -1,29 +1,78 @@
-body {
-    font-family: Roboto;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+@import 'meyer-reset.css';
+
+/* SETUP */
+
+* {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+}
+/* picture {
+    display: block;
 }
 
-.hero {
-    background-color: #1F2937;
-    height: 300px;
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+header, footer, main {
+    border: 3px solid red;
+    min-height: 100px;
+}
+
+section {
+    border: 2px solid green;
+    min-height: 300px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* STRUCTURE */
+
+body {
     display: flex;
     flex-direction: column;
-    padding: 0 48px;
+    min-height: 100vh;
 }
-.header {
+
+main {
+    flex-grow: 1;
+}
+
+div {
+    border: 4px solid orange;
+    padding: 10px;
+}
+
+/* Modules */
+.hero-module {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-module :is(.welcome-text, picture) {
+    flex-basis: 50%;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-    color: #f9faf8;
 }
 
-ul {
+header, footer {
+    background-color: #1F2937;
+    padding: 0 15%;
+}
+nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -33,14 +82,58 @@ ul {
     color: #E5E7EB;
 }
 
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+button {
+    background-color: #3882F6;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    color: #E5E7EB;
+}
+
+ .hero {
+    background-color: #1F2937;
+    padding: 0 15%;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin: 0;
+}
+
 .hero-text {
-    flex: 1;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
+.information {
+    padding: 0 15%;
+    text-align: center;
 
-.content {
-    flex: 1;
 }
+.info-items-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.info-item {
+    width: 200px;
+}
+
+/*
 .quote {
     background-color: #E5E7EB;
 }
@@ -49,11 +142,18 @@ ul {
     color: #1F2937;
     font-weight: 300;
 }
-
+*/
 .cta {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-banner {
     background-color: #3882F6;
-}
+    width: 70%;
+    height: 50;
+} 
 
-.footer {
-    background-color: #1F2937;
-}
+
+
