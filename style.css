@@ -5,15 +5,28 @@
 * {
     box-sizing: border-box;
 }
-picture {
+
+/* picture {
     display: block;
-}
+} */
 
 img {
-    display: block;
+    /* display: block; */
     width: 100%;
     height: auto;
 } 
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* DEBUG */
 
 header, footer, main {
     border: 3px solid red;
@@ -25,14 +38,8 @@ section {
     min-height: 300px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-p a, li a {
-    color: blue;
-    text-decoration: underline;
+div {
+border: 4px solid orange;
 }
 
 /* STRUCTURE */
@@ -48,7 +55,6 @@ main {
 }
 
 div {
-    border: 4px solid orange;
     padding: 10px;
 }
 
@@ -71,6 +77,12 @@ header {
 header, footer {
     background-color: #1F2937;
     padding: 0 15%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav ul{
     margin: 0;
@@ -95,7 +107,7 @@ button {
     color: #E5E7EB;
 }
 
- .hero {
+.hero {
     background-color: #1F2937;
     padding: 0 15%;
 }
@@ -119,10 +131,11 @@ button {
 }
 
 .information {
-    padding: 0 15%;
+    padding: 20px 15%;
     text-align: center;
 
 }
+
 .info-items-container {
     display: flex;
     justify-content: space-around;
@@ -133,16 +146,18 @@ button {
     width: 200px;
 }
 
-/*
 .quote {
     background-color: #E5E7EB;
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
 }
 .quote-text {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
 }
-*/
+
 .cta {
     min-height: 300px;
     display: flex;
@@ -152,8 +167,5 @@ button {
 .cta-banner {
     background-color: #3882F6;
     width: 70%;
-    height: 50;
+    min-height: 200px;
 } 
-
-
-
