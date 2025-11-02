@@ -28,7 +28,7 @@ p a, li a {
 
 /* DEBUG */
 
-header, footer, main {
+/* header, footer, main {
     border: 3px solid red;
     min-height: 100px;
 }
@@ -40,7 +40,7 @@ section {
 
 div {
 border: 4px solid orange;
-}
+} */
 
 /* STRUCTURE */
 
