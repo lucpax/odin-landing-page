@@ -101,7 +101,7 @@ nav ul{
 
 button {
     background-color: #3882F6;
-    width: 70px;
+    width: 64px;
     border-radius: 5px;
     border: none;
     color: #E5E7EB;
@@ -176,4 +176,14 @@ button {
     background-color: #3882F6;
     width: 70%;
     min-height: 200px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 48px;
 } 
+
+.cta-banner :is(button) {
+    border: solid #f9faf8;
+    height: 32px;
+}
