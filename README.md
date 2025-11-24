@@ -1,2 +1,2 @@
-# Odin Landing Pages \n
+# Odin Landing Pages
 This project showcases basic concepts of HTML and CSS.
