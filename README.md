@@ -1,2 +1,2 @@
-#Odin Landing Pages
-This is the second project of TOP project and is the end of the foundations lessons.
+# Odin Landing Pages
+This project showcases basic concepts of HTML and CSS.
